@@ -9,6 +9,14 @@
 """
 
 
+class PlayMixIn:
+    def playball(self):
+        print("playing")
+
+    def playgame(self):
+        pass
+
+
 class Parent:
     def __init__(self, name):
         self.name = name
@@ -21,7 +29,8 @@ class Parent:
         print("这是" + self.name + "私有的方法")
 
 
-class Son(Parent):
+# 加上MixIn用于区分类和接口（ps:实际上是抽象类）
+class Son(Parent, PlayMixIn):
     # 会直接覆盖父类的对应方法 可以使用super方法
     # 和java中的不同  Java会调用父类的构造方法，而Python不会
     def __init__(self, name):
@@ -37,10 +46,8 @@ class Son(Parent):
         print("这是" + self.name + "的方法")
 
 
-
-
-
 if __name__ == "__main__":
     # parent = Parent("DaMing")
     son = Son("XiaoMing")
     # son.print_name()
+    son.playball()
