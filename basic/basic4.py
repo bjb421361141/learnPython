@@ -1,5 +1,6 @@
 """
    if判断和循环
+   生成器使用
 """
 from collections import Iterable
 from collections import Iterator

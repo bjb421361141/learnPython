@@ -148,6 +148,9 @@ fast_fn(1)
 
 # 偏函数 为函数指定一个默认值，默认的值为从左到右
 int2 = functools.partial(int, base=2)
+# 将字符串根据进制进行转换
+int2("10")
+int2("1A", base=16)
 
 
 # 相当于 定义一个新的函数
