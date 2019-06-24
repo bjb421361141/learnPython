@@ -154,5 +154,7 @@ int2("1A", base=16)
 
 
 # 相当于 定义一个新的函数
+# 使用bin函数可以将int类型转成二进制 str
 def int3(x, base=2):
     return int(x, base)
+
