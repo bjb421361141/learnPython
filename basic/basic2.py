@@ -50,6 +50,6 @@ b = "Age: {0}. Gender: {1}. this is not need string"
 # format中的参数可以传list或者tuple的引用
 print(a, b.strip("this is not need string").format(*[25, True]), sep="\n")
 
-
-
+# unicode 转码，python中默认字符串都是使用unicode 进行编码的
+'\u7528\u6237\u540d\u6216\u5bc6\u7801\u9519\u8bef'.encode("utf-8").decode("utf-8")
 
