@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import unittest
-from demo.MyORM import StringField, Model
+from demo.ormFramework.MyORM import StringField, Model
 
 
 # 继承unittest.TestCase 来进行单元测试

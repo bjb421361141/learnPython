@@ -30,6 +30,9 @@ md5_.update('how to use md5 in '.encode('utf-8'))
 md5_.update('python hashlib?'.encode('utf-8'))
 print(md5_)
 
+"""
+    md5加盐算法
+"""
 # 需要加密的内容
 message = b'Hello, world!'
 # 可以通过某个固定算法算出值（这个值必须是固定的）

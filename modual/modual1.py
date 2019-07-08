@@ -8,7 +8,7 @@ private函数和变量：名称前带有两个下滑线，它们“不应该”�
 安装第三方模块：使用pip或使用Anaconda来进行包管理
 """
 # 两个下滑线的变量或函数为特殊的变量或函数，可以直接被引用
-__author__ = 'Michael Liao'
+__author__ = 'Bai jb'
 
 import sys
 
