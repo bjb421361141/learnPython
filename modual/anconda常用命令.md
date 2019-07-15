@@ -9,7 +9,7 @@
     **/
     conda create --name '环境名称' python=3.7 '需要安装的Python包列表'
     activate '环境名称'
-    conda info -envs  //列出所有环境
+    conda info --envs  //列出所有环境
     conda create -n '环境名' --clone '已存在的环境' //复制环境
     conda remove -n '环境名' --all
     deactivate  //注销当前环境
