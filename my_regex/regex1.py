@@ -47,5 +47,12 @@ if __name__ == "__main__":
     assert not is_valid_email('mr-bob@example.com')
     print('ok')
 
+    # A = ASCII
+    # I = IGNORECASE
+    # L = LOCALE
+    # U = UNICODE
+    # M = MULTILINE
+    # S = DOTALL
+    # X = VERBOSE
     # r'\w+' 匹配英文或数字 使用'10 进行替换' 为替换的个数
     print(re.sub(r'\w+', '10', "xy 15 rt 3e,gep", 2, flags=re.I))

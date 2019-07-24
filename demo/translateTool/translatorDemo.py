@@ -17,3 +17,7 @@ Return the string obtained by replacing the leftmost
     a callable, it's passed the Match object and must return
     a replacement string to be used.
 """, dest="zh-CN"))
+
+print(translator.translate("""
+模板
+""", dest="en"))

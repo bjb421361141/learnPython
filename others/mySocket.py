@@ -8,6 +8,7 @@ import ssl
 from urllib.parse import urlparse
 
 """
+    Python 中socket的简单使用
     urllib包底层使用的是socket进行接口请求
 """
 
@@ -41,6 +42,7 @@ def urlRequest(url):
     # 把接收的数据写入文件:
     with open('C:\\Users\\Baijb\\Desktop\\baidu.html', 'wb') as f:
         f.write(html)
+    s.close()
 
     sock = ssl.wrap_socket(socket.socket())
     sock.connect(('www.sina.com.cn', 443))  # 地址或域名 + 端口号
@@ -62,13 +64,13 @@ def urlRequest(url):
             buffer2.append(d)
         else:
             break
-    data = b''.join(buffer)
+    data2 = b''.join(buffer2)
 
-    header, html = data.split(b'\r\n\r\n', 1)
+    header, html = data2.split(b'\r\n\r\n', 1)
     print(header.decode('utf-8'))
     # 把接收的数据写入文件:
     with open('C:\\Users\\Baijb\\Desktop\\sina.html', 'wb') as f:
         f.write(html)
-
+    sock.close()
 
 urlRequest("")
