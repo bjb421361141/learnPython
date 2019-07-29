@@ -37,7 +37,7 @@ def urlRequest(url):
             break
     data = b''.join(buffer)
 
-    header, html = data.split(b'\r\n\r\n', 1)
+    header, html = data.split(b'\r\n\r\n', 1)  # 头信息和信息体
     print(header.decode('utf-8'))
     # 把接收的数据写入文件:
     with open('C:\\Users\\Baijb\\Desktop\\baidu.html', 'wb') as f:
