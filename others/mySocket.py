@@ -24,7 +24,7 @@ def urlRequest(url):
     # 创建一个socket:AF_INET指定使用IPv4协议，AF_INET6 IPv6协议。SOCK_STREAM指定使用面向流的TCP协议
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # 建立连接:
-    s.connect(('www.baidu.com', 80))
+    s.connect(('www.baidu.com', 443))
     s.send(b'GET / HTTP/1.1\r\nHost: www.baidu.com\r\nConnection: close\r\n\r\n')
     # 接收数据:
     buffer = []

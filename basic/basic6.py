@@ -79,10 +79,6 @@ def drawStar(x, y):
         turtle.rt(144)  # 右转角度144
 
 
-
-
-
-
 for x in range(0, 250, 50):
     drawStar(x, 0)
 
